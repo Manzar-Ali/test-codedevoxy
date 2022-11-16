@@ -6,7 +6,7 @@ const path = require("path");
 const app=express();
 
 // mongodb connectivity
-mongoose.connect("mongodb://127.0.0.1:27017/User-Management");
+// mongoose.connect("mongodb://127.0.0.1:27017/User-Management");
 
 // Set routes
 const user_Route = require('./routes/userRoutes');

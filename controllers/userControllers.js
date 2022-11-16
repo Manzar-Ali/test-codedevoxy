@@ -1,8 +1,8 @@
 
-const User = require('../models/userModel');
-const Contact = require('../models/contactModel');
-const Newsletter = require('../models/newsletterModel');
-const Blog = require('../models/blogModel');
+// const User = require('../models/userModel');
+// const Contact = require('../models/contactModel');
+// const Newsletter = require('../models/newsletterModel');
+// const Blog = require('../models/blogModel');
 
 const bcrypt = require('bcrypt');
 
@@ -25,27 +25,27 @@ const blogSave = async(req,res)=>{
 
         
        
-        const blog = new Blog({
-            name:req.body.name,
-            description:req.body.description,
-            explain:req.body.explain,
-            image:req.file.filename,
+        // const blog = new Blog({
+        //     name:req.body.name,
+        //     description:req.body.description,
+        //     explain:req.body.explain,
+        //     image:req.file.filename,
                       
             
-        })
+        // })
 
-        const blogData = await blog.save();
+        // const blogData = await blog.save();
 
-        if(blogData){
+        // if(blogData){
 
             
             
 
             res.render('addBlog',{message:"Your blog is added successfully. Great work bro!!"})
-        }
-        else{
-            res.render('addBlog',{message:"Your blog is not added. Please check the error"})
-        }
+        // }
+        // else{
+        //     res.render('addBlog',{message:"Your blog is not added. Please check the error"})
+        // }
 
     } catch (error) {
         console.log(error.message);
@@ -66,28 +66,13 @@ const homeSave = async(req,res)=>{
 
         // const tokenValue = "adfafafafafaf"
         // const spassword =await securePassword(req.body.password);
-        const contact = new Contact({
-            name:req.body.name,
-            email:req.body.email,
-            
-            message:req.body.message
-           
-            
-            
-        })
-
-        const contactData = await contact.save();
-
-        if(contactData){
+        
 
             
             sendContactData(req.body.name,req.body.email,req.body.message);
 
             res.render('home')
-        }
-        else{
-            res.render('home')
-        }
+       
 
     } catch (error) {
         console.log(error.message);
@@ -230,31 +215,12 @@ const contactLoad = async (req,res)=>{
 const contactSave = async(req,res)=>{
     try {
 
-        // const tokenValue = "adfafafafafaf"
-        // const spassword =await securePassword(req.body.password);
-        const contact = new Contact({
-            name:req.body.name,
-            email:req.body.email,
-            
-            message:req.body.message
-           
-            
-            
-        })
-
-        const contactData = await contact.save();
-
-        if(contactData){
-
+        
             
             sendContactData(req.body.name,req.body.email,req.body.message);
 
             res.render('contact')
-        }
-        else{
-            res.render('contact')
-        }
-
+        
     } catch (error) {
         console.log(error.message);
     }
@@ -276,29 +242,14 @@ const newsletterSave = async(req,res)=>{
 
         // const tokenValue = "adfafafafafaf"
         // const spassword =await securePassword(req.body.password);
-        const newsletter = new Newsletter({
-            // name:req.body.name,
-            email:req.body.email,
-           
-           
-            
-            
-        })
-
-        const newsletterData = await newsletter.save();
-
-        if(newsletterData){
-            const mailData=await Newsletter.find({verify:0},{"email":1,"_id":0});
-            console.log(mailData);
+        
+            // const mailData=await Newsletter.find({verify:0},{"email":1,"_id":0});
+            // console.log(mailData);
             
             sendContactData(req.body.name,req.body.message);
 
             res.render('newsletter',{message:"You are successfully added to our newsletter"})
-        }
-        else{
-            res.render('contact',{message:"Your request is not proceed at the moment please try again later"})
-        }
-
+      
     } catch (error) {
         console.log(error.message);
     }
