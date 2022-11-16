@@ -1,0 +1,35 @@
+/* responsiveness for tablet */
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    #blog {
+        padding: 52px 38px 0 29px;
+    }
+}
+/* for large mobile */
+@media only screen and (min-width:576px) and (max-width:767px) {
+    #blog {
+        padding: 66px 11px 0 9px;
+    }
+}
+
+/* for small mobile */
+
+@media only screen and (max-width:575px) {
+    #blog {
+        padding: 66px 11px 0 9px;
+    }
+    #blog .blog-box{
+        flex-direction: column;
+    }
+    #blog .blog-box h4 {
+        
+        margin-top: 20px;
+    }
+    .contact-me p {
+        text-align: center;
+    }
+    .box {
+        text-align: center;
+     }
+}
+

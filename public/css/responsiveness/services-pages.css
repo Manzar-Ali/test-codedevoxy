@@ -1,0 +1,28 @@
+/*  Responsiveness for large phone 576px to 767px  */
+
+@media only screen and (min-width:576px) and (max-width:767px) {
+    .services-1 {
+        height: 208vh;
+    }
+}
+
+
+/* responsiveness for tablet */
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .services-1 {
+        height: 235vh;
+    }
+    .row {
+        
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    .services-1 {
+        height: 230vh;
+    }
+    
+}

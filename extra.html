@@ -1,0 +1,49 @@
+                   Controller
+       const userData=await User.find({is_admin:0})
+       
+       const totalStudents = userData.length;
+      
+        res.render('dashboard',{user:userData,userNo:totalStudents});
+
+                   Ejs
+
+                </table>
+                <br><br>
+                <h4>All the teacher Data</h4>
+                <br>
+                
+               <table width="50%">
+                <tr>
+                    <th>Name</th>
+                    <!-- <th>Email</th>
+                    <th>Phone</th> -->
+                    <th>Image</th>
+            
+                </tr>
+                <br><br>
+                      
+            
+                <% 
+                 for(let i=0; i<teacherNo ; i++){
+                    %>
+                    <tr>
+                        <td>
+                            <%= teacher[i].name %>
+            
+                        </td>
+                         
+                        <td>
+                            <img src="/teacherImages/<%= teacher[i].image %>" alt="<%= teacher[i].image %>" width="100px" height="100px">
+                            
+            
+                        </td>
+                       
+                    </tr>
+                    <%  
+                 }
+                  
+                        
+                %>
+                </table>
+
+                <img src="../lion.PNG" alt="">

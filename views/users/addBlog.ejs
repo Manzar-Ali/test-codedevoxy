@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Blog</title>
+</head>
+<body>
+    <h2>Add your Blog</h2>
+    <br>
+   
+
+    <% 
+       if(typeof message !=='undefined'){
+        %>
+            <p style="color: green; background-color: white;"><%= message %></p>
+       <% 
+        }
+    %> 
+    <br><br>
+    <form action="/addBlog" method="post" enctype="multipart/form-data">
+        <input type="text" name="name" placeholder="Enter the blog Name" required><br><br>
+        <textarea name="description" id="" cols="30" rows="10" placeholder="Enter the blog Description"></textarea><br><br>
+        <textarea name="explain" id="" cols="80" rows="80" placeholder="Enter the blog Explain"></textarea><br><br>
+        <input type="file" name="image" required /><br><br>
+       
+        <input type="submit" value="Add Blog">
+    </form>
+</body>
+</html>

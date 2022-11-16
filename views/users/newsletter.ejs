@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Form</title>
+</head>
+<body>
+    <h1>Hi welcome to newsletter Page</h1><br><br>
+    <form action="/newsletter" method="post" >
+        <!-- <input type="text" name="name" placeholder="Enter your Name" required><br><br> -->
+        <input type="email" name="email" placeholder="Enter your Email" required><br><br>
+        
+        <input type="submit" value="Enter to Newsletter">
+    </form>
+    <br><br>
+
+    <% 
+       if(typeof message !=='undefined'){
+        %>
+            <p style="color: green; background-color: white;"><%= message %></p>
+       <% 
+        }
+    %> 
+</body>
+</html>

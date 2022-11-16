@@ -1,0 +1,240 @@
+/*  Responsiveness for large phone 576px to 767px  */
+
+@media only screen and (min-width:576px) and (max-width:767px) {
+    .content {
+        margin-bottom: 50px;
+    }
+    
+    .content .text {
+        width: 100%;
+        text-align: center;
+        padding-right: 0px;
+    }
+    .text p{
+        margin: 0px;
+    }
+    .text a{
+        margin-top: 30px;
+    }
+    .content .img {
+        display: none;
+    }
+
+    /* about section */
+     .about .row {
+        flex-direction: column;
+     }
+     .about .row .content h3{
+        text-align: center;
+        margin: auto;
+     }
+     .about .row .content {
+        padding: 25px;
+        margin-bottom: 0px;
+     }
+     .about .row .img-container img{
+        width: 500px;
+     }
+     .about .row .content .btn-1{
+        margin: auto;
+     }
+
+     /* services section */
+     .services{
+        height: auto;
+     }
+
+     .services .row .column{
+        display: flex;
+        flex-direction: column;
+     }
+     .services .row .column .card{
+        margin-bottom: 30px;
+     }
+     /* testamoials */
+   .text-test h2 {
+      font-size: 35px;
+   }
+     /* contact section */
+
+     
+     .contact .row form{
+        margin-bottom: 20px;
+     }
+     .contact h1 {
+      font-size: 26px;
+    }
+     /* footer area */
+
+     .footer .box-container {
+        text-align: center;
+     }
+     .footer .credit{
+        margin-top: 30px;
+     }
+
+     .testimonial {
+        min-height: auto;
+     }
+}
+
+/* responsiveness for tablet */
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .content {
+        margin-bottom: 50px;
+    }
+    .content .text {
+        width: 100%;
+        text-align: center;
+        padding-right: 0px;
+        margin-bottom: 113px;
+        margin-top: 50px;
+    }
+    .text p{
+        margin: 0px;
+    }
+    .text a{
+        margin-top: 30px;
+    }
+    .content .img {
+        margin:  auto;
+    }
+    
+    /* about section */
+     .about .row {
+        flex-direction: column;
+     }
+     .about .row .content h3{
+        text-align: center;
+        margin: auto;
+     }
+     .about .row .content {
+        padding: 25px;
+        margin-bottom: 0px;
+     }
+     .about .row .img-container img{
+        width: 600px;
+     }
+     .about .row .content .btn-1{
+        margin: auto;
+     }
+
+     /* services section */
+     .services{
+        height: auto;
+     }
+     .services h2{
+        margin-top: 50px;
+        margin-bottom: 50px;
+     }
+     .services .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+     
+     .column{
+        width: 100%;
+     }
+     .services .row .column .card{
+        margin-bottom: 30px;
+     }
+
+     /* contact section */
+
+     
+     .contact .row form{
+        margin-bottom: 20px;
+     }
+
+
+     .testimonial {
+        min-height: auto;
+     }
+     
+}
+
+
+/* small mobile  */
+
+
+@media only screen and (max-width:575px) {
+
+ .content {
+      margin-bottom: 50px;
+  }
+  .content .text {
+      width: 100%;
+      text-align: center;
+      padding-right: 0px;
+  }
+  .text p{
+      margin: 0px;
+  }
+  .text a{
+      margin-top: 30px;
+  }
+  .content .img {
+      display: none;
+  }
+
+  /* about section */
+   .about .row {
+      flex-direction: column;
+   }
+   .about .row .content h3{
+      text-align: center;
+      margin: auto;
+   }
+   .about .row .content {
+      padding: 25px;
+      margin-bottom: 0px;
+   }
+   .about .row .img-container img{
+      width: 500px;
+   }
+   .about .row .content .btn-1{
+      margin: auto;
+   }
+
+   /* services section */
+   .services{
+      height: auto;
+   }
+
+   .services .row .column{
+      display: flex;
+      flex-direction: column;
+   }
+   .services .row .column .card{
+      margin-bottom: 30px;
+   }
+
+   /* contact section */
+
+   
+   .contact .row form{
+      margin-bottom: 20px;
+   }
+   .contact h1 {
+      font-size: 26px;
+    }
+   /* testamoials */
+   .text-test h2 {
+      font-size: 22px;
+   }
+   /* footer area */
+
+   .footer .box-container {
+      text-align: center;
+   }
+   .footer .credit{
+      margin-top: 30px;
+   }
+
+   .testimonial {
+      min-height: auto;
+   }
+}
