@@ -73,9 +73,9 @@ user_route.post('/addBlog',upload.single('image'),userController.blogSave);
 
 user_route.get('/navtest',userController.navTest);
 
-user_route.get('*',function (req,res) {
-    res.redirect('404');
-});
+// user_route.get('*',function (req,res) {
+//     res.redirect('404');
+// });
 
 
 
