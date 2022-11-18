@@ -42,7 +42,7 @@
 }
 
 #contact-banner{
-  height: 50vh;
+  /* height: 50vh; */
   font-size: 30px;
   align-items: center;
   justify-content: center;
@@ -78,7 +78,7 @@
 }
 
 .container {
-  max-width: 1080px;
+  /* max-width: 1080px; */
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
@@ -194,7 +194,7 @@
 .contact-form .input-box textarea:focus ~ span{
   color: #4070F4;
   font-size: 12px;
-  transform: translateY(-20px);
+  /* transform: translateY(-20px); */
 }
 
 .contact-form .input-box input[type="submit"]
@@ -219,22 +219,3 @@
 
 
 
-@media (max-width: 991px) {
-  section {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  
-  .row {
-    flex-direction: column;
-  }
-  
-  .contact-info {
-    margin-bottom: 40px;
-    width: 100%;
-  }
-  
-  .contact-form {
-    width: 100%;
-  }
-}
