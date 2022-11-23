@@ -4,17 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"node app.js",
+    
     "test": "echo \"Error: no test specified\" && exit 1",
-<<<<<<< HEAD
+
     "dev": "nodemon app.js -e js,ejs",
     "start":"node app.js"
 
    
-=======
-    "dev": "nodemon app.js -e js,ejs"
+
+   
     
->>>>>>> 282e89ee0c6fca5677490a50deef90278c331a0c
+ 
   },
   "author": "",
   "license": "ISC",
