@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=">
-  <title>Contact</title>
-  <script src="https://kit.fontawesome.com/c32adfdcda.js" crossorigin="anonymous"></script>
-  <!-- <link rel="stylesheet" href="/css/contact.css"> -->
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/nav.css">
-  <!-- responsive css -->
-  <link rel="stylesheet" href="/css/responsiveness/home.css">
-  
-</head>
-<body>
+	<head>
+		<meta charset="utf-8">
+		<title>About Us</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Aleo:400,700|Lato:400,500,600,700,900|Roboto&display=swap" rel="stylesheet preload" as="style">
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/main.css">
+		<link rel="stylesheet" href="/css/contact.css">
+		<link rel="stylesheet" href="/css/nav.css">
+		<!-- Css link for responsiveness	 -->
+		<link rel="stylesheet" href="/css/responsiveness/about.css">
 
-   <!-- navbar -->
-   <!--<nav>
+		
+	</head>
+	<body>
+
+
+ <!-- navbar -->
+ <nav>
     <div class="wrapper">
       <div class="logo"><a href="home">Code<span>Devoxy</span></a></div>
       <input type="radio" name="slider" id="menu-btn">
@@ -25,7 +28,7 @@
         <li><a href="home">Home</a></li>
 
         <li>
-          <a href="web-development" class="desktop-item">Services</a>
+          <a href="blockchain.ejs" class="desktop-item">Services</a>
           <input type="checkbox" id="showMega">
           <label for="showMega" class="mobile-item">Services</label>
           <div class="mega-box">
@@ -72,8 +75,8 @@
 
         <li><a href="portfolios">Portfolio</a></li>
 
-       <li><a href="blog.html">Blog</a></li> 
-        <button class="btn-mudda"><a href="contact">Contact Us</a></button>
+        <!-- <li><a href="blog.html">Blog</a></li> -->
+        <button class="btn-mudda"><a href="contact.html">Contact Us</a></button>
       </ul>
       <div class="burger" title="Navigation Menu">
         <div class="line1"></div>
@@ -82,179 +85,108 @@
     </div>
     </div>
   </nav>
--->
-   
+		 
+
+		   
   <!-- custom cursors  -->
-<!-- <div class="cursor-1"></div>
-<div class="cursor-2"></div> -->
+<div class="cursor-1"></div>
+<div class="cursor-2"></div>
 
-  <!-- <section id="contact-banner" class="contact-page"> -->
-   
-    <!-- <h2>#Contact Us</h2>
-    
-    <p>Join us to avail our Development & Consultation Services! </p> -->
-   
-    
-<!-- </section> -->
 
-<!-- 
-  <section class="page1">
-    
-    <div class="section-header">
-      <div class="container">
-        <h2>Let's start development journey</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dignissimos eaque doloremque, nulla mollitia facilis temporibus ullam voluptas nostrum consequatur? Fugiat vitae sint quo est eveniet perspiciatis eum asperiores ipsam.</p>
-      </div>
-    </div>
-    
-    <div class="container">
+		<section id="about-banner" class="about-page">
+   
+			<h2>#Contact Us</h2>
+			
+			<p>We are here to help you 24/7</p>
+		   
+			
+		</section>
+
+				
+
+    <section class="contact" id="contact">
+
+      <h1 class="heading"> <span> Let's Kick Start Your</span> project Development </h1>
+  
       <div class="row">
-        
-        <div class="contact-info">
-          <div class="contact-info-item">
-            <div class="contact-info-icon">
-              <i class="fas fa-home"></i>
-            </div>
-            
-            <div class="contact-info-content">
-              <h4>Address</h4>
-              <p>4671 Sugar Camp Road,<br/> Owatonna, Minnesota, <br/>55060</p>
-            </div>
-          </div>
+  
+        <form action="/home" method="post">
+          <h2>Name*</h2>
+          <input type="text" name="name" placeholder=" Enter your name" class="box">
+          <h2>Email*</h2>
+          <input type="email"name="email" placeholder=" Enter your email" class="box">
           
-          <div class="contact-info-item">
-            <div class="contact-info-icon">
-              <i class="fas fa-phone"></i>
-            </div>
-            
-            <div class="contact-info-content">
-              <h4>Phone</h4>
-              <p>561-456-2321</p>
-            </div>
-          </div>
           
-          <div class="contact-info-item">
-            <div class="contact-info-icon">
-              <i class="fas fa-envelope"></i>
-            </div>
+          <h2>Message*</h2>
+          <textarea name="message" class="box" placeholder="Enter your message" id="" cols="30" rows="10"></textarea>
+          <input type="submit" value="send message" class="btn-1">
+        </form>
+  
+        <div class="image">
+          <!-- <img src="images/contact-img.svg" alt=""> -->
+          <div class="contact-info">
             
-            <div class="contact-info-content">
-              <h4>Email</h4>
-             <p>example@email.com</p>
-            </div>
+            <h2><span>Email : </span> CodeDevoxy@gmail.com</h2>
+            <h2><span>Wattsapp : </span> +92-3107285227</h2>
           </div>
         </div>
-        
-        <div class="contact-form">
-          <form action="/contact" method="post" id="contact-form">
-            <h2>Let's Start</h2>
-            <div class="input-box">
-              <input type="text" required="true" name="name">
-              <span>Full Name*</span>
-            </div>
-            
-            <div class="input-box">
-              <input type="email" required="true" name="email">
-              <span>Email*</span>
-            </div>
-            
-            
-            <div class="input-box">
-              <textarea required="true" name="message"></textarea>
-              <span>Type your Message...</span>
-            </div>
-            
-            <div class="input-box">
-              <input type="submit" value="Send" name="">
-            </div>
-          </form>
-        </div>
-        
+  
       </div>
-    </div>
-  </section> -->
-
-  <!-- <section class="features" id="features">
-
-    <h1 class="heading"> Our Features </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <img src="images/feature-img-1.png" alt="">
-            <h3>Fast Services</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
-             <a href="#" class="btn">read more</a> 
-            
-        </div>
-
-        <div class="box">
-            <img src="images/feature-img-2.png" alt="">
-            <h3>happy clients</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
-            <a href="#" class="btn">read more</a> 
-        </div>
-
-        <div class="box">
-            <img src="images/feature-img-3.png" alt="">
-            <h3>Quality Work</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
-            <a href="#" class="btn">read more</a> 
-        </div>
-
-    </div>
-
-</section> -->
-
+  
+    </section>
+			
+               <!-- free qoute section  -->
 
   <div class="contact-me">
     <p>Do you have a Project to Discuss?</p>
-    <a class="button-two" href="#">Get Free Quote</a>
+    <a class="button-two" href="contact">Get Free Quote</a>
   </div>
+
   
 
-<!-- footer section  -->
 
-<section class="footer">
+	<!-- footer section  -->
 
-  <div class="box-container">
+  <section class="footer">
 
-    <div class="box">
-      <h3>Navigation</h3>
-      <a href="home">home</a>
-      <a href="about">about</a>
-      <a href="web-development">services</a>
-      <a href="home">review</a>
-      <a href="contact">contact</a>
+    <div class="box-container">
+
+      <div class="box">
+        <h3>Navigation</h3>
+        <a href="home">home</a>
+        <a href="about">about</a>
+        <a href="web-development">services</a>
+        <a href="home">review</a>
+        <a href="contact">contact</a>
+      </div>
+
+      <div class="box">
+        <h3>Services</h3>
+        <a href="web-development">Web Development</a>
+        <a href="blockchain">Blockchain</a>
+        <a href="stock-crypto">Crypto</a>
+      </div>
+
+      <div class="box">
+        <h3>contact info</h3>
+        <a>+123-456-7890</a>
+        <a>example@gmail.com</a>
+        <a>Lahore, Pakistan - 400104</a>
+
+      </div>
+
     </div>
 
-    <div class="box">
-      <h3>Services</h3>
-      <a href="web-development">Web Development</a>
-      <a href="blockchain">Blockchain</a>
-      <a href="stock-crypto">Crypto</a>
-    </div>
+    <div class="credit"> @Copyright 2022 <span> CodeDevoxy </span> | all rights reserved </div>
 
-    <div class="box">
-      <h3>contact info</h3>
-      <a>+123-456-7890</a>
-      <a>example@gmail.com</a>
-      <a>Lahore, Pakistan - 400104</a>
+  </section>
 
-    </div>
+		
+	</body>
+	<script src="js/main.js"></script>
+<!-- Swiper JS -->
+<script src="js/swiper-bundle.min.js"></script>
 
-  </div>
-
-  <div class="credit"> @Copyright 2022 <span> CodeDevoxy </span> | all rights reserved </div>
-
-</section>
-
-</body>
-<script src="js/main.js"></script>
-<!-- Swiper JS 
- <script src="js/swiper-bundle.min.js"></script>
-
- JavaScript 
-<script src="js/script.js"></script> -->
+<!-- JavaScript -->
+<script src="js/script.js"></script>
 </html>
-

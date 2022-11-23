@@ -679,6 +679,7 @@ body{
     flex-wrap: wrap-reverse;
     gap:1.5rem;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .contact .row form{
@@ -1846,6 +1847,11 @@ ul{
   {
       font-size: 1.8rem;
   }
+  .contact-info{
+    text-align: center;
+    width: 100%;
+    padding-top: 50px;
+  }
 }
 
 
@@ -1858,6 +1864,11 @@ ul{
     flex: 0 50%;
     max-width: 50%;
   }
+  .contact-info{
+    text-align: center;
+    width: 100%;
+    padding-top: 60px;
+  }
 }
 @media screen and (min-width: 992px) {
   section {
@@ -1867,9 +1878,18 @@ ul{
     flex: 0 0 33.33%;
     max-width: 33.33%;
   }
+  .image{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-info{
+  text-align: center;
+  width: 100%;
+  padding-top: 80px;
 }
 
-
+}
 
 
 nav input{
@@ -1989,3 +2009,23 @@ nav input{
   height: 100px;
 }
 
+/* testing the content info and new contact form*/
+.contact-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%!important;
+}
+
+.contact-info h2{
+  font-size: 17px;
+  color: #505666;
+  margin-bottom: 30px;
+}
+.contact-info h2 span{
+  font-size: 25px;
+  color: #2c7bfe;
+
+}
